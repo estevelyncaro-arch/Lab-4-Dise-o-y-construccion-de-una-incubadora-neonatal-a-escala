@@ -60,6 +60,14 @@ Las alarmas complementan el control automático al advertir condiciones anormale
 
 La fuente de alimentación suministra la energía requerida por los sensores, los circuitos de control y los actuadores. La arquitectura de alimentación puede variar entre diseños. Cuervo et al. utilizaron una fuente de 12 V para alimentar su sistema. Por ello, las características de la fuente deben corresponder a los requerimientos de los componentes seleccionados, en lugar de asumir que todas las incubadoras emplean las mismas tensiones de funcionamiento.
 
+## Referencias
 
+[1] L. Restrepo Pérez, N. Durango Londoño, N. Gómez Suárez, F. González Ramírez y N. Rivera Bonilla, “Prototipo de incubadora neonatal,” Revista Ingeniería Biomédica, vol. 1, no. 1, pp. 55–59, mayo 2007.
+
+[2] Drägerwerk AG & Co. KGaA, Isolette® 8000 plus: Neonatal Closed Care, ficha técnica, doc. 91 04 806, rev. 18.10-2, 2018.
+
+[3] K. Tran et al., “Designing a low-cost multifunctional infant incubator,” Journal of Laboratory Automation, vol. 19, no. 3, pp. 332–337, jun. 2014, doi: 10.1177/2211068214530391.
+
+[4] Cuervo, M. A. Rodríguez-Lázaro, R. Farré, D. Gozal, G. Solana, and J. Otero, “Low-cost and open-source neonatal incubator operated by an Arduino microcontroller,” HardwareX, vol. 15, Art. no. e00457, Sep. 2023, doi: 10.1016/j.ohx.2023.e00457.
 
 
