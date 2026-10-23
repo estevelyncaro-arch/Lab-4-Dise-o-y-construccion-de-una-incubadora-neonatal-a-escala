@@ -136,6 +136,16 @@ delay(100);
 
 Finalmente, en la tercera parte del código se implemento un filtro exponencial que integra el 5 % de la nueva lectura con el 95 % de la lectura acumulada anterior, permitiendo suavizar la señal y reducir fluctuaciones bruscas en los valores medidos. Posteriormente, se establece una escala de 5 g mediante la operación (pesoEntero / 5) * 5, la cual aproxima el valor obtenido al múltiplo de 5 gramos más cercano, facilitando una visualización más estable. Finalmente, la instrucción delay(100) establece el ritmo de ejecución del ciclo principal, permitiendo procesar aproximadamente cinco lecturas por segundo y manteniendo un funcionamiento estable del sistema.
 
+# Preguntas
+
+* Pregunta 1: ¿Qué otras variables (y por qué) además de las aquí mencionadas son críticas en el monitoreo neonatal?
+
+a) Humedad Relativa del Aire (HRA): Su control evita la pérdida excesiva de agua a través de la piel del prematuro, reduciendo el riesgo de deshidratación y alteraciones hidroelectrolíticas.
+b) Saturación de Oxígeno (SpO₂) y Frecuencia Cardíaca: Permiten detectar episodios de apnea y garantizar una adecuada oxigenación, previniendo tanto la hipoxia como las complicaciones asociadas al exceso de oxígeno.
+c) Concentración de Oxígeno Ambiental (FiO₂): Debe mantenerse dentro de rangos controlados para asegurar una correcta oxigenación del neonato y evitar efectos adversos.
+d) Nivel de Ruido Ambiental (dB): Un ambiente con bajo nivel de ruido disminuye el estrés fisiológico y favorece el desarrollo adecuado del sistema nervioso del prematuro. 
+
+* Pregunta 2: ¿Qué haría falta para convertir el sistema desarrollado en una incubadora neonatal real?
 
 ## Referencias
 
