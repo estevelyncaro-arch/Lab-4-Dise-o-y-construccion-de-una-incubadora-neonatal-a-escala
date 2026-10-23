@@ -141,11 +141,34 @@ Finalmente, en la tercera parte del código se implemento un filtro exponencial 
 * Pregunta 1: ¿Qué otras variables (y por qué) además de las aquí mencionadas son críticas en el monitoreo neonatal?
 
 a) Humedad Relativa del Aire (HRA): Su control evita la pérdida excesiva de agua a través de la piel del prematuro, reduciendo el riesgo de deshidratación y alteraciones hidroelectrolíticas.
+
 b) Saturación de Oxígeno (SpO₂) y Frecuencia Cardíaca: Permiten detectar episodios de apnea y garantizar una adecuada oxigenación, previniendo tanto la hipoxia como las complicaciones asociadas al exceso de oxígeno.
+
 c) Concentración de Oxígeno Ambiental (FiO₂): Debe mantenerse dentro de rangos controlados para asegurar una correcta oxigenación del neonato y evitar efectos adversos.
-d) Nivel de Ruido Ambiental (dB): Un ambiente con bajo nivel de ruido disminuye el estrés fisiológico y favorece el desarrollo adecuado del sistema nervioso del prematuro. 
+
+d) Nivel de Ruido Ambiental (dB): Un ambiente con bajo nivel de ruido disminuye el estrés fisiológico y favorece el desarrollo adecuado del sistema nervioso del prematuro.
+
 
 * Pregunta 2: ¿Qué haría falta para convertir el sistema desarrollado en una incubadora neonatal real?
+
+a) Redundancia y seguridad física: Se recomienda incorporar un termostato independiente que desconecte los calentadores si la temperatura supera los 38 °C, así como una batería de respaldo para garantizar el funcionamiento ante fallos eléctricos.
+
+b) Cumplimiento de normativas médicas: El sistema debe cumplir con la norma IEC 60601-2-19, específica para incubadoras neonatales, e incluir aislamiento eléctrico de grado BF o CF para minimizar el riesgo de corrientes de fuga. Además, la estructura puede incorporar doble pared para mejorar el aislamiento térmico.
+
+c) Sistema de alarmas: Deben implementarse alarmas audiovisuales para fallos de temperatura, sensores o suministro eléctrico, clasificadas según los niveles de prioridad establecidos en la norma IEC 60601-1-8.
+
+
+* Pregunta 3: ¿Qué semejanzas hay entre una incubadora neonatal y una servo-cuna?
+
+A pesar de sus diferencias estructurales, la incubadora y la cuna radiante comparten características fundamentales:
+
+a) Control servocontrolado: Ambos equipos monitorean continuamente la temperatura del neonato mediante una sonda cutánea y ajustan automáticamente el aporte de calor para mantener la temperatura programada.
+
+b) Termorregulador: Su función principal es proporcionar un ambiente térmico neutro que reduzca el gasto metabólico y el consumo de oxígeno del recién nacido.
+
+c) Sistemas de seguridad: Incorporan alarmas para fallos de energía, desviaciones de temperatura, errores en la sonda de medición y condiciones de sobrecalentamiento.
+
+d) Monitoreo y soporte clínico: Permiten la integración de accesorios como balanzas, portavenoclisis, monitores multiparámetro y sistemas de radiografía, facilitando el seguimiento integral del paciente.
 
 ## Referencias
 
