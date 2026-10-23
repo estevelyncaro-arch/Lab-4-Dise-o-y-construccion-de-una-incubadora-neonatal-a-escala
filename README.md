@@ -62,7 +62,33 @@ La fuente de alimentación suministra la energía requerida por los sensores, lo
 
 # Parte B 
 
-Para la parte B del laboratorio se utilizaron diferentes componentes  para la medición de peso y temperatura. En la medición de peso se empleó una galga extensiométrica conectada a una pantalla LCD, la cual permitió visualizar los valores obtenidos. Por otra parte, para la medición y control de temperatura se utilizaron un termistor, un LED verde como indicador visual, un bombillo de 120 W como fuente de calor y un ventilador de 12 V para la distribución del aire caliente. Para la implementación de la medición de peso mediante la galga extensiométrica y la visualización de los datos en la pantalla LCD, se desarrolló el siguiente código en Arduino:
+Para la parte B del laboratorio se utilizaron diferentes componentes  para la medición de peso y temperatura. En la medición de peso se empleó una galga extensiométrica conectada a una pantalla LCD, la cual permitió visualizar los valores obtenidos. Por otra parte, para la medición y control de temperatura se utilizaron un termistor, un LED verde como indicador visual, un bombillo de 120 V y 100 W como fuente de calor y un ventilador de 12 V para la distribución del aire caliente.
+
+##
+Para comenzar la cubierta se realizó con ayuda de una caja de plástico transparente con el fin de tener visibilidad hacia el interior,la cual tiene las siguientes mediciones:
+- 51 cm de largo
+- 31 cm de alto 
+- 33 cm de profundidad
+  
+A esta se le realizaron dos orificios circulares con sus respectivas compuertas con el fin de tener acceso al neonato sin tener pérdida de temperatura.
+
+<img width="2000" alt="image" src="https://github.com/user-attachments/assets/3d00cfc4-c7f9-48ff-82db-6b02b8a09a02" />
+
+En la base se reliza un orificio donde se ubica un sensor resistivo de fuerza FSR-402 el cual se implementó para tomar la medición del peso. Sobre el sensor se ubican dos borradores junto con una base de carton piedra con el fin de tener una mejor captura de la medición. 
+
+<img width="1000" height="642" alt="image" src="https://github.com/user-attachments/assets/7d41523e-44fc-406a-866f-43ba05378002" /> <img width="1000"  alt="image" src="https://github.com/user-attachments/assets/abdced0c-5c2c-43bc-a250-4fda9c9bb138" /> <img width="1000"  alt="image" src="https://github.com/user-attachments/assets/dc3f7e95-3cf4-4319-8e62-035785a11fe5" />
+
+Para la captura de la medición del peso se realiza mediante Arduino capturando la señal obtenida del sensor FSR-402 y mostrando el valor del peso en una pantalla LCD como se muestra a continuación:
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/e93795d8-20a7-43fc-9e93-322ddd1e9460" />
+
+Adicionalmente se agrega una sección en la parte derecha de la incubadora, donde se encuentra el elemento calefactor (bombillo 120 V y 100 W) el cual queda frente a un ventilador, el cual va incrustado en la incubadora con el fin de distribuir el calor a través de toda la superficie. En esta secció se encuentra tambien un circuito el cual se compone de un termistor (sensor de temperatura) conectado con una resistencia de 1 KΩ al puerto positivo de la fuente, a la union de esa resistencia con el termistor se conecta otra resistencia de 1 kΩ a la base del transistor 2N2222 el cual va a funcionar como un interruptor activando un led verde ante la presencia de calor tomada por el termistor, el colector del transistor va a tierra (GND) y el emisor va conectado al catodo del led verde, y el ánodo va conectado a la fuente mediante una resistencia de 220 Ω. 
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/04b90ad6-df0f-436f-abb3-f88bfe16ee7b" />  <img height="1000" alt="WhatsApp Image 2026-10-22 at 9 38 28 PM" src="https://github.com/user-attachments/assets/71bdeb08-c0e7-4405-8e8f-55da624040b4" /> <img width="1280" height="591" alt="image" src="https://github.com/user-attachments/assets/9048b38f-72ee-40ab-a3b1-a9bac0f6ecc7" />
+
+
+##
+Para la implementación de la medición de peso mediante la galga extensiométrica y la visualización de los datos en la pantalla LCD, se desarrolló el siguiente código en Arduino:
 
 ```Matlab 
 #include <LiquidCrystal.h>
