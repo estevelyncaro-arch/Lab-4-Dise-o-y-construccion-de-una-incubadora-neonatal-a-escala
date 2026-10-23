@@ -62,6 +62,81 @@ La fuente de alimentación suministra la energía requerida por los sensores, lo
 
 # Parte B 
 
+Para la parte B del laboratorio se utilizaron diferentes componentes  para la medición de peso y temperatura. En la medición de peso se empleó una galga extensiométrica conectada a una pantalla LCD, la cual permitió visualizar los valores obtenidos. Por otra parte, para la medición y control de temperatura se utilizaron un termistor, un LED verde como indicador visual, un bombillo de 120 W como fuente de calor y un ventilador de 12 V para la distribución del aire caliente. Para la implementación de la medición de peso mediante la galga extensiométrica y la visualización de los datos en la pantalla LCD, se desarrolló el siguiente código:
+
+```Matlab 
+#include <LiquidCrystal.h>
+
+// RS (12), E (11), D4 (5), D5 (4), D6 (3), D7 (2)
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+const int pinSensor = A0;
+
+// 1. Reposo (Sin peso)
+int adcMin = 20;          
+float pesoMin = 0.0;
+
+// 2. Punto Intermedio 
+int adcMedio = 250;       
+float pesoMedio = 200.0;  
+
+// 3. Punto Máximo 
+int adcMax = 800;         
+float pesoMax = 2000.0;
+```
+
+s
+
+```Matlab 
+float pesoFiltrado = 0.0;
+float pesoAnterior = -1.0;
+float alpha = 0.05;
+void setup() {
+  lcd.begin(16, 2);
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("PESO NEONATO:");
+}
+long suma = 0;
+for (int i = 0; i < 40; i++) {
+  suma += analogRead(pinSensor);
+  delay(2);
+}
+int adcMedido = suma / 40;
+adcMedido = constrain(adcMedido, adcMin, adcMax);
+```
+
+s
+
+```Matlab 
+float pesoInstantaneo = 0.0;
+
+if (adcMedido <= adcMedio) {
+  pesoInstantaneo = map(adcMedido, adcMin, adcMedio, pesoMin, pesoMedio);
+} else {
+  pesoInstantaneo = map(adcMedido, adcMedio, adcMax, pesoMedio, pesoMax);
+}
+pesoFiltrado = (alpha * pesoInstantaneo) + ((1.0 - alpha) * pesoFiltrado);
+
+int pesoEntero = round(pesoFiltrado);
+pesoEntero = (pesoEntero / 5) * 5; // Pasos de 5 gramos
+
+if (pesoEntero < 10) {
+  pesoEntero = 0;
+}
+if (abs(pesoEntero - pesoAnterior) >= 5 || (pesoEntero == 0 && pesoAnterior != 0)) {
+  lcd.setCursor(0, 1);
+  lcd.print(pesoEntero);
+  lcd.print(" g        ");
+  pesoAnterior = pesoEntero;
+}
+
+delay(100);
+```
+
+s
+
+
 ## Referencias
 
 [1] L. Restrepo Pérez, N. Durango Londoño, N. Gómez Suárez, F. González Ramírez y N. Rivera Bonilla, “Prototipo de incubadora neonatal,” Revista Ingeniería Biomédica, vol. 1, no. 1, pp. 55–59, mayo 2007.
