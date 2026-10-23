@@ -62,7 +62,7 @@ La fuente de alimentación suministra la energía requerida por los sensores, lo
 
 # Parte B 
 
-Para la parte B del laboratorio se utilizaron diferentes componentes  para la medición de peso y temperatura. En la medición de peso se empleó una galga extensiométrica conectada a una pantalla LCD, la cual permitió visualizar los valores obtenidos. Por otra parte, para la medición y control de temperatura se utilizaron un termistor, un LED verde como indicador visual, un bombillo de 120 W como fuente de calor y un ventilador de 12 V para la distribución del aire caliente. Para la implementación de la medición de peso mediante la galga extensiométrica y la visualización de los datos en la pantalla LCD, se desarrolló el siguiente código:
+Para la parte B del laboratorio se utilizaron diferentes componentes  para la medición de peso y temperatura. En la medición de peso se empleó una galga extensiométrica conectada a una pantalla LCD, la cual permitió visualizar los valores obtenidos. Por otra parte, para la medición y control de temperatura se utilizaron un termistor, un LED verde como indicador visual, un bombillo de 120 W como fuente de calor y un ventilador de 12 V para la distribución del aire caliente. Para la implementación de la medición de peso mediante la galga extensiométrica y la visualización de los datos en la pantalla LCD, se desarrolló el siguiente código en Arduino:
 
 ```Matlab 
 #include <LiquidCrystal.h>
@@ -85,7 +85,7 @@ int adcMax = 800;
 float pesoMax = 2000.0;
 ```
 
-s
+En la primera parte del código se establecieron dos puntos de calibración: un punto de referencia con un valor de 200 y un punto final de 1800. Estos valores se utilizaron para ajustar la sensibilidad y mejorar la linealidad de la respuesta de la galga extensiométrica, ya que este tipo de sensores suelen ser más sensibles. Posteriormente, se definieron las variables pesoFiltrado y pesoAnterior. La variable pesoFiltrado almacena el valor procesado de la medición, mientras que pesoAnterior conserva el último valor registrado para evitar actualizaciones innecesarias en la pantalla LCD. Finalmente, se implementó el parámetro alpha = 0,05, correspondiente a un filtro de promedio móvil exponencial, cuyo objetivo es atenuar el ruido presente en las lecturas analógicas y obtener una medición más estable y confiable.
 
 ```Matlab 
 float pesoFiltrado = 0.0;
