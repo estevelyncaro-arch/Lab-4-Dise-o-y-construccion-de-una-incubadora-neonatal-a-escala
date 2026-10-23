@@ -196,6 +196,10 @@ c) Sistemas de seguridad: Incorporan alarmas para fallos de energía, desviacion
 
 d) Monitoreo y soporte clínico: Permiten la integración de accesorios como balanzas, portavenoclisis, monitores multiparámetro y sistemas de radiografía, facilitando el seguimiento integral del paciente.
 
+# Conclusiones 
+
+En este trabajo se analizaron los parámetros y sistemas necesarios para el adecuado funcionamiento de una incubadora neonatal, con el objetivo de garantizar condiciones seguras para el cuidado de recién nacidos. A partir del estudio realizado, se determinó que variables como la temperatura, la humedad relativa, la concentración de oxígeno y los sistemas de monitoreo son esenciales para mantener un ambiente controlado que favorezca la estabilidad fisiológica del neonato. Asimismo, se evidenció la necesidad de incorporar mecanismos de seguridad, alarmas y el cumplimiento de normativas como la IEC 60601 para reducir riesgos durante la operación del equipo. La integración de estos elementos permite mejorar las condiciones de atención y contribuir a la disminución de complicaciones asociadas a la prematuridad. Como siguiente paso, se recomienda desarrollar e implementar un prototipo funcional que permita validar experimentalmente el desempeño del sistema y evaluar su capacidad de respuesta ante diferentes condiciones de operación.
+
 ## Referencias
 
 [1] L. Restrepo Pérez, N. Durango Londoño, N. Gómez Suárez, F. González Ramírez y N. Rivera Bonilla, “Prototipo de incubadora neonatal,” Revista Ingeniería Biomédica, vol. 1, no. 1, pp. 55–59, mayo 2007.
