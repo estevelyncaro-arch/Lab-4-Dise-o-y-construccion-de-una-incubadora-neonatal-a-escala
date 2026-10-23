@@ -169,7 +169,7 @@ Para terminar se realiza la prueba de funcionamiento durante el laboratorio, don
 
 https://github.com/user-attachments/assets/1f669421-77f0-4bf6-af75-89301efd0e51
 
-##
+## Costo Estimado
 Para desarrollo del prototipo funcional para la adquisición de peso y temperatura se realizó utilizando componentes de bajo costo.
 
 | Componente | Cantidad | Función en el Proyecto | Costo Aprox. (COP) | 
@@ -187,6 +187,22 @@ Para desarrollo del prototipo funcional para la adquisición de peso y temperatu
 | **Bombillo 12V 100W con roseta** | 1 | Parte de calefacción  | $6,000 | 
 | **Termistor** | 1 | Medir la temperatura  | $700 | 
 | **TOTAL** | | | **$189,100 COP** |
+
+A continuación se realiza una comparación de costos con diferentes proveedores y páginas obteniendo la siguente comparación:
+
+## Comparativa de Costos de Mercado vs. Desarrollo Propio
+
+| Modelo / Opción | Proveedor / Plataforma | País | Estado | Precio Original | Precio Estimado (COP) | Factor de Costo vs. Prototipo |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Desarrollo Propio** | Prototipo Local | Colombia 🇨🇴 | Nuevo (BOM) | **$189.100 COP** | **$189.100 COP** | **1x (Base)** |
+| **Draeger Isolette 8000** | Ultra Medical Equipment | Reino Unido 🇬🇧 | Usado | £1.000 GBP | ~$5.300.000 COP | ~28x |
+| **Draeger Isolette 8000** | Hessen Medical Ltd. | Reino Unido 🇬🇧 | Usado / Reacondicionado | $1.571 USD | ~$6.500.000 COP | ~34.4x |
+| **Draeger Isolette 8000** | Precio Promedio (Bimedis) | Europa 🇪🇺 | Usado / Reacondicionado | $1.764 USD | ~$7.300.000 COP | ~38.6x |
+| **Draeger Isolette 8000** | Mediproma B.V. | Países Bajos 🇳🇱 | Usado / Reacondicionado | $1.795 USD | ~$7.400.000 COP | ~39.1x |
+| **Draeger Isolette 8000** | CENTRE D'AFFAIRES MEDICAL | Francia 🇫🇷 | Usado / Reacondicionado | $1.941 USD | ~$8.000.000 COP | ~42.3x |
+
+Los precios de referencia corresponden a equipos usados/reacondicionados de segunda mano comercializados en Europa. No incluyen gastos de importación, fletes internacionales ni nacionalización (aranceles/IVA) a Colombia, los cuales incrementarían sensiblemente su costo final.
+##
 
 El prototipo desarrollado demuestra una solución altamente económica para la adquisición y monitoreo de peso a escala académica. Sin embargo, para su implementación en un entorno clínico real, se debe considerar el incremento en el presupuesto asociado al uso de sensores de grado médico certificados fuentes de alimentación ininterrumpida (UPS), aislamiento eléctrico (norma IEC 60601-1) y la fabricación de la cúpula de acrílico grado médico con control térmico.
 
