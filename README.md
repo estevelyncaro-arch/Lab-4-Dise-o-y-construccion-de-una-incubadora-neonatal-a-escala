@@ -162,6 +162,13 @@ delay(100);
 
 Finalmente, en la tercera parte del código se implemento un filtro exponencial que integra el 5 % de la nueva lectura con el 95 % de la lectura acumulada anterior, permitiendo suavizar la señal y reducir fluctuaciones bruscas en los valores medidos. Posteriormente, se establece una escala de 5 g mediante la operación (pesoEntero / 5) * 5, la cual aproxima el valor obtenido al múltiplo de 5 gramos más cercano, facilitando una visualización más estable. Finalmente, la instrucción delay(100) establece el ritmo de ejecución del ciclo principal, permitiendo procesar aproximadamente cinco lecturas por segundo y manteniendo un funcionamiento estable del sistema.
 
+##
+Para terminar se realiza la prueba de funcionamiento durante el laboratorio, donde se toma como ejemplo de neonato un peso de 1.8 Kg, al encender la incubadora se enciende el bombillo y el led verde que indica la presencia de temperatura, también se detecta que el ventilador transfiere el aire cálido hacia el interior de la incubadora, sin embargo este no se distribuye unifomemente por lo que se recomienda implementar un ventilador más grande para una mejor distribución del calor. Adicionalmente se toma el valor del peso, y se obtiene un valor con un 0% de error, observando en la pantalla LCD un valor de 1800 g correspondientes al peso. 
+
+<img width="1000"  alt="image" src="https://github.com/user-attachments/assets/baed3feb-aa47-4978-9296-8a5ead5401f0" />
+
+https://github.com/user-attachments/assets/1f669421-77f0-4bf6-af75-89301efd0e51
+
 # Preguntas
 
 * Pregunta 1: ¿Qué otras variables (y por qué) además de las aquí mencionadas son críticas en el monitoreo neonatal?
