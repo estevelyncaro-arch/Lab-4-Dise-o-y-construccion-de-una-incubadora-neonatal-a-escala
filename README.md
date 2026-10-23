@@ -182,7 +182,7 @@ Para desarrollo del prototipo funcional para la adquisición de peso y temperatu
 | **Protoboard (830 puntos)** | 2 | Base para montaje y pruebas del circuito | $24,000 | 
 | **Cables Jumper (M-M / M-H)** | 1 Kit | Interconexión de señales y alimentación | $8,000 | 
 | **Cable USB A-B** | 1 | Alimentación y comunicación serial | $6,000 | 
-| **Base / Estructura de Acrílico** | 1 | Soporte mecánico para desacople de fuerza | $43,000 | 
+| **Base / Estructura de Plastico** | 1 | Soporte mecánico para desacople de fuerza | $43,000 | 
 | **Ventilador de 12V** | 1 | Distribución del aire | $7,000 | 
 | **Bombillo 12V 100W con roseta** | 1 | Parte de calefacción  | $6,000 | 
 | **Termistor** | 1 | Medir la temperatura  | $700 | 
