@@ -188,9 +188,10 @@ Para desarrollo del prototipo funcional para la adquisición de peso y temperatu
 | **Termistor** | 1 | Medir la temperatura  | $700 | 
 | **TOTAL** | | | **$189,100 COP** |
 
-A continuación se realiza una comparación de costos con diferentes proveedores y páginas obteniendo la siguente comparación:
 
 ## Comparativa de Costos de Mercado vs. Desarrollo Propio
+
+A continuación se realiza una comparación de costos de la incubadora " Isolette® 8000 plus: Neonatal Closed Care" con diferentes proveedores y páginas obteniendo la siguente comparación:
 
 | Modelo / Opción | Proveedor / Plataforma | País | Estado | Precio Original | Precio Estimado (COP) | Factor de Costo vs. Prototipo |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
