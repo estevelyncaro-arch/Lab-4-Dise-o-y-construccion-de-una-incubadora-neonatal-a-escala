@@ -188,6 +188,7 @@ Para desarrollo del prototipo funcional para la adquisición de peso y temperatu
 | **Termistor** | 1 | Medir la temperatura  | $700 | 
 | **TOTAL** | | | **$189,100 COP** |
 
+El prototipo desarrollado demuestra una solución altamente económica para la adquisición y monitoreo de peso a escala académica. Sin embargo, para su implementación en un entorno clínico real, se debe considerar el incremento en el presupuesto asociado al uso de sensores de grado médico certificados fuentes de alimentación ininterrumpida (UPS), aislamiento eléctrico (norma IEC 60601-1) y la fabricación de la cúpula de acrílico grado médico con control térmico.
 
 # Preguntas
 
