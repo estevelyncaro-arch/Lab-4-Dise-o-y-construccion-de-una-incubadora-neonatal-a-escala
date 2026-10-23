@@ -1,4 +1,4 @@
-# Lab-4-Dise-o-y-construccion-de-una-incubadora-neonatal-a-escala
+# Lab 4 - Diseño y construcción de una incubadora neonatal a escala 
 - María Angel Benavides Silva - 5600852
 - Evelyn Marcela Caro Rodríguez - 5600848
 
@@ -59,6 +59,8 @@ Las alarmas complementan el control automático al advertir condiciones anormale
 ***Fuente de alimentación***
 
 La fuente de alimentación suministra la energía requerida por los sensores, los circuitos de control y los actuadores. La arquitectura de alimentación puede variar entre diseños. Cuervo et al. utilizaron una fuente de 12 V para alimentar su sistema. Por ello, las características de la fuente deben corresponder a los requerimientos de los componentes seleccionados, en lugar de asumir que todas las incubadoras emplean las mismas tensiones de funcionamiento.
+
+# Parte B 
 
 ## Referencias
 
