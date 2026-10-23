@@ -134,7 +134,7 @@ if (abs(pesoEntero - pesoAnterior) >= 5 || (pesoEntero == 0 && pesoAnterior != 0
 delay(100);
 ```
 
-s
+Finalmente, en la tercera parte del código se implemento un filtro exponencial que integra el 5 % de la nueva lectura con el 95 % de la lectura acumulada anterior, permitiendo suavizar la señal y reducir fluctuaciones bruscas en los valores medidos. Posteriormente, se establece una escala de 5 g mediante la operación (pesoEntero / 5) * 5, la cual aproxima el valor obtenido al múltiplo de 5 gramos más cercano, facilitando una visualización más estable. Finalmente, la instrucción delay(100) establece el ritmo de ejecución del ciclo principal, permitiendo procesar aproximadamente cinco lecturas por segundo y manteniendo un funcionamiento estable del sistema.
 
 
 ## Referencias
