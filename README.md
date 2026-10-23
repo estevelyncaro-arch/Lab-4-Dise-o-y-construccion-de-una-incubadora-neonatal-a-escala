@@ -106,7 +106,7 @@ int adcMedido = suma / 40;
 adcMedido = constrain(adcMedido, adcMin, adcMax);
 ```
 
-s
+En la segunda parte del código se configuran los pines de conexión de la pantalla LCD. Posteriormente, se realiza la adquisición de datos mediante la toma de 40 muestras consecutivas, separadas por intervalos de 2 ms. A partir de estas muestras se calcula un valor promedio, lo que contribuye a reducir el ruido presente en la señal. Adicionalmente, se implementa la función constrain(...), la cual limita los valores obtenidos a un rango previamente establecido, evitando lecturas fuera de los límites definidos.
 
 ```Matlab 
 float pesoInstantaneo = 0.0;
