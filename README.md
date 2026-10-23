@@ -169,6 +169,26 @@ Para terminar se realiza la prueba de funcionamiento durante el laboratorio, don
 
 https://github.com/user-attachments/assets/1f669421-77f0-4bf6-af75-89301efd0e51
 
+##
+Para desarrollo del prototipo funcional para la adquisición de peso y temperatura se realizó utilizando componentes de bajo costo.
+
+| Componente | Cantidad | Función en el Proyecto | Costo Aprox. (COP) | 
+| :--- | :---: | :--- | :---: |
+| **Arduino Uno R3** | 1 | Procesamiento de señal y control del sistema | $36,000 |
+| **Pantalla LCD 16x2** | 1 | Interfaz de usuario para visualización del peso | $29,000 |
+| **Sensor de Presión FSR (2 hilos)** | 1 | Medición piezoresistiva de carga | $28,000 | 
+| **Potenciómetro $10\,\text{k}\Omega$** | 1 | Ajuste de contraste para el LCD | $1,200 | 
+| **Resistencia $10\,\text{k}\Omega$ ($1/4\,\text{W}$)** | 1 | Divisor de tensión para acondicionamiento del FSR | $200 | 
+| **Protoboard (830 puntos)** | 2 | Base para montaje y pruebas del circuito | $24,000 | 
+| **Cables Jumper (M-M / M-H)** | 1 Kit | Interconexión de señales y alimentación | $8,000 | 
+| **Cable USB A-B** | 1 | Alimentación y comunicación serial | $6,000 | 
+| **Base / Estructura de Acrílico** | 1 | Soporte mecánico para desacople de fuerza | $43,000 | 
+| **Ventilador de 12V** | 1 | Distribución del aire | $7,000 | 
+| **Bombillo 12V 100W con roseta** | 1 | Parte de calefacción  | $6,000 | 
+| **Termistor** | 1 | Medir la temperatura  | $700 | 
+| **TOTAL** | | | **$189,100 COP** |
+
+
 # Preguntas
 
 * Pregunta 1: ¿Qué otras variables (y por qué) además de las aquí mencionadas son críticas en el monitoreo neonatal?
